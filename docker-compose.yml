@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: senha_root
+      MYSQL_DATABASE: CadastroAnimais
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: senha
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - rede
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: senha_root
+    ports:
+      - "8080:80"
+    networks:
+      - rede
+
+  web:
+    build:
+      context: ./apache
+      dockerfile: Dockerfile
+    container_name: web
+    volumes:
+      - ./php/site:/var/www/site
+    ports:
+      - "8085:80"
+    networks:
+      - rede
+
+networks:
+  rede:
+    driver: bridge
+
+volumes:
+  db_data:

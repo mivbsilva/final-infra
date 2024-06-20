@@ -1,0 +1,36 @@
+Para realizar o trabalho você deverá utilizar os conceitos aprendidos durante a disciplina de infraestrutura de TI. O trabalho consiste no desenvolvimento de uma página web 
+(php ou html, fica a critério de vocês. Podem usar bootstrap, javascrip ou qualquer outra a ferramente que traga responsividade a página criada). 
+Essa página deverá se conectar com o banco de dados e realizar o CRUD.
+
+O trabalho poderá ser realizado em grupos de no máximo 4 pessoas.
+
+Você deverá utilizar o Docker para gerenciar sua aplicação.
+
+Tudo o que está sendo solicitado neste trabalho já foi realizado durante as atividades da disciplina, a única coisa que precisam fazer é reunir esses conceitos, 
+criar suas páginas, pois a parte de gerenciamento já foi realizado em infra.
+
+Para aqueles que apresentaram todas as atividades, como por exemplo, conexão com o banco, gerenciamento com o phpmyadmin, 
+criação de rede utilizando Docker e criação de páginas web, vocês precisam apenas criar a página web ou incrementar o layout apresentado anteriormente.
+
+Aquele que não fizeram as atividades precisam fazê-las para realizar o trabalho.
+
+O trabalho não é difícil de ser realizado.
+
+O trabalho deverá ser apresentado no dia 20/06 no horário da aula de infra de TI por todos os integrantes do grupo. 
+QUEM DO GRUPO NÃO ESTIVER PRESENTE A NOTA SERÁ ZERADA.
+
+A divisão dos pontos será realizada da seguinte maneira.
+
+
+
+2 pontos: desenvolvimento do layout da página(1.0) e utilização do docker para criar a rede (0.5) , criar os containers de banco e de página web e qualquer outro container necessário para sua aplicação.(0.5)
+
+2 pontos: CRUD no banco através da página criada(O CRUD NÃO PODERÁ SER REALIZADO ATRAVÉS DA UTILIZAÇÃO O SGBD DIRETO NO BANCO, OBRIGATORIAMENTE PRECISA SER ATRAVÉS DA PÁGINA WEB.(0.5 PARA CADA TAREFA NO BANCO).
+
+1 pontos: apresentação do trabalho.
+
+A apresentação será analisada de forma individual.
+
+Peço que me enviem o tema da aplicação que será desenvolvida.
+
+Qualquer dúvida estou à disposição.

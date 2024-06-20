@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 1 - ITI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        
+        #voltar {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #btnSalvar {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #tooltip {
+            visibility: hidden;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            position: fixed;
+            z-index: 1;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        #tooltip.show {
+            visibility: visible;
+            animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeOut {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo2.png" alt="logo" style="width: 150px; float: right; margin-left: 10px;">
+        <h1>Trabalho Infraestrutura de TI</h1>
+    </header>
+    <main>
+        <aside>
+            <div id="bloco1">
+                <h2>Contexto:</h2><br>
+                <p>Desenvolver um crud básico relacionado com os conceitos aprendidos em sala de aula.</p>
+            </div>
+            <div id="bloco2">
+                <h2>Tópicos importantes:</h2><br>
+                <p>
+                    🔸Docker<br>
+                    🔸phpMyAdmin<br>
+                    🔸HTML<br>
+                    🔸Javascript<br><br><br>
+                </p>
+            </div>
+        </aside>
+
+        <div id="main">
+            <div class="container">
+                <div class="header">
+                    <span>Cadastro de Pets</span>
+                </div>
+            
+                <div class="divTable">
+                    <form id="petForm">
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required><br>
+                        <label for="raca">Raça:</label><br>
+                        <input type="text" id="raca" name="raca" required><br>
+                        <label for="idade">Idade:</label><br>
+                        <input type="text" id="idade" name="idade" required><br>
+                        <label for="tutor">Tutor:</label><br>
+                        <input type="text" id="tutor" name="tutor" required><br>
+                        <button type="button" id="voltar" onclick="window.location.href='index.html'">Voltar</button>
+                        <button type="submit" id="btnSalvar">Salvar</button>
+                    </form>
+                    <div id="tooltip">Pet inserido com sucesso!</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Felipe Martins, Jessica Laine e Milena Ventura. Disciplina  Infraestrutura de TI (Prof.: Camila) - Análise e Desenvolvimento de Sistemas - Vianna Jr. (jun. 2024)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

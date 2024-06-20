@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fontes/roboto/Roboto-Regular.ttf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 81px;
+    background-color: #014a4d;
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: #ffffffd5;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+    height: calc(100% - 131px); 
+}
+
+aside {
+    height: 100%;
+}
+
+#bloco1 {
+    height: 50%;
+    background-color: #8d9fa1;
+    padding: 2rem;
+}
+
+#bloco1 > p, #bloco2 > p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+#bloco2 {
+    height: 50%;
+    background-color: #014a4d;
+    padding: 2rem;
+}
+
+#bloco2 > h2 {
+    color: #fff;
+}
+
+#bloco2 > p > .destaque {
+    color: #9400d3;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer {
+    height: 50px;
+    padding: 3px;
+    text-align: right;
+    background-color: #737373;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: white;
+    padding: 1rem;
+}
+
+.header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12px;
+}
+
+.header span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#new {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #9400d3;
+    cursor: pointer;
+}
+
+.divTable {
+    padding: 10px;
+    width: auto;
+    height: inherit;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: whitesmoke;
+}
+
+tr {
+    border-bottom: 1px solid rgb(238, 235, 235)!important;
+}
+
+tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+}
+
+thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+thead tr th.acao,
+tbody tr td.acao {
+    width: 100px!important;
+    text-align: center;
+}
+
+.label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(57, 57, 226);
+    color: white;
+    cursor: pointer;
+}
+
